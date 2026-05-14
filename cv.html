@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isra Ijaz | Professional Portfolio</title>
+    <!-- Importing professional fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            display: flex; 
+            background-color: #ffffff; 
+            color: #333; 
+            line-height: 1.6;
+            font-family: 'Poppins', sans-serif; /* Clean modern body font */
+        }
+
+        /* Sidebar Styling - Navy Blue */
+        .sidebar { 
+            width: 300px; 
+            background-color: #001f3f; 
+            color: white; 
+            min-height: 100vh; 
+            padding: 40px 30px; 
+            position: fixed; 
+        }
+        
+        .sidebar h1 { 
+            font-family: 'Playfair Display', serif; 
+            font-size: 32px; 
+            margin-bottom: 5px; 
+            line-height: 1.1;
+        }
+        
+        .sidebar p { 
+            font-size: 13px; 
+            color: #9eb6cc; 
+            margin-bottom: 35px; 
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .contact-item { margin-bottom: 22px; }
+        .contact-item strong { 
+            display: block; 
+            color: #4facfe; 
+            font-size: 11px; 
+            text-transform: uppercase; 
+            margin-bottom: 4px;
+            letter-spacing: 1px;
+        }
+        .contact-item span, .contact-item a { 
+            font-size: 14px; 
+            color: #e0e0e0; 
+            text-decoration: none;
+            word-wrap: break-word;
+        }
+
+        /* Main Content Styling */
+        .main-content { margin-left: 300px; padding: 60px 80px; width: 100%; }
+        
+        section { margin-bottom: 50px; }
+        
+        h2 { 
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            color: #001f3f; 
+            margin-bottom: 25px; 
+            display: flex;
+            align-items: center;
+        }
+        
+        h2::after {
+            content: "";
+            height: 2px;
+            flex-grow: 1;
+            background: #f0f0f0;
+            margin-left: 20px;
+        }
+
+        /* Italic intro as requested */
+        .intro-text { 
+            font-size: 17px; 
+            color: #555; 
+            font-style: italic; 
+            border-left: 3px solid #4facfe; 
+            padding-left: 25px;
+            margin-bottom: 20px;
+        }
+
+        .item-box { margin-bottom: 25px; }
+        .item-header { display: flex; justify-content: space-between; align-items: baseline; }
+        .item-title { font-weight: 600; font-size: 17px; color: #222; }
+        .item-meta { color: #777; font-size: 14px; margin-top: 2px; }
+        
+        .cgpa-pill { 
+            background: #001f3f; 
+            color: white; 
+            padding: 3px 12px; 
+            border-radius: 20px; 
+            font-size: 12px; 
+            font-weight: 600; 
+        }
+
+        /* Skills/Language Grid */
+        .grid-container { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+            gap: 15px; 
+        }
+        
+        .tag { 
+            background: #f8f9fa; 
+            padding: 12px 18px; 
+            border-radius: 4px; 
+            border-bottom: 2px solid #001f3f; 
+            font-size: 14px; 
+            font-weight: 500;
+            color: #444;
+        }
+
+        @media (max-width: 900px) {
+            body { flex-direction: column; }
+            .sidebar { width: 100%; min-height: auto; position: relative; padding: 40px; }
+            .main-content { margin-left: 0; padding: 40px 25px; }
+        }
+    </style>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <h1>Isra Ijaz</h1>
+        <p>BSCS Student</p>
+        
+        <div class="contact-info">
+            <div class="contact-item">
+                <strong>Parentage</strong>
+                <span>D/O Ijaz Ahmed</span>
+            </div>
+            <div class="contact-item">
+                <strong>Location</strong>
+                <span>Gujrat, Pakistan</span>
+            </div>
+            <div class="contact-item">
+                <strong>Contact</strong>
+                <span>0341 611 2822</span>
+            </div>
+            <div class="contact-item">
+                <strong>Email</strong>
+                <span>israw.xx@gmail.com</span>
+            </div>
+            <div class="contact-item">
+                <strong>GitHub</strong>
+                <a href="https://github.com/isrraw" target="_blank">github.com/isrraw</a>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <section>
+            <h2>Personal Statement</h2>
+            <p class="intro-text">
+                "I've always been into tech, from exploring new gadgets to deconstructing web systems. Programming allows me to move from the role of a user to that of a creator, and I'm currently refining my skills in C++, SQL, and modern web tech."
+            </p>
+        </section>
+
+        <section>
+            <h2>Academic Profile</h2>
+            <div class="item-box">
+                <div class="item-header">
+                    <div class="item-title">BS Computer Science (4th Semester)</div>
+                    <div class="cgpa-pill">CGPA: 3.48</div>
+                </div>
+                <div class="item-meta">ILM College (Affiliated with University of Gujrat)</div>
+            </div>
+
+            <div class="item-box">
+                <div class="item-header">
+                    <div class="item-title">Intermediate (ICS)</div>
+                    <span class="item-meta">690 / 1100</span>
+                </div>
+                <div class="item-meta">Marghazar College for Women, Gujrat</div>
+            </div>
+
+            <div class="item-box">
+                <div class="item-header">
+                    <div class="item-title">Matriculation</div>
+                    <span class="item-meta">959 / 1100</span>
+                </div>
+                <div class="item-meta">The Educators School (Ahmed Campus), Gujrat</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="grid-container">
+                <div class="tag">C++ (OOP & Data Structures)</div>
+                <div class="tag">SQL (Database Management)</div>
+                <div class="tag">Java & JavaScript (Learning)</div>
+                <div class="tag">Computer Architecture</div>
+                <div class="tag">VS Code Proficiency</div>
+                <div class="tag">Logic Building</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Language Proficiency</h2>
+            <div class="grid-container">
+                <div class="tag">Urdu (Native Speaker)</div>
+                <div class="tag">English (Professional Working)</div>
+                <div class="tag">Punjabi (Fluent Understanding)</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Selected Projects</h2>
+            <div class="item-box">
+                <div class="item-title">Console-Based Calculator</div>
+                <p style="font-size: 14px; color: #666; margin-top: 8px;">
+                    Developed a functional calculator using C++ to perform arithmetic operations. This project helped me master control structures and the fundamental logic of procedural programming.
+                </p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
